@@ -2,12 +2,14 @@
 #include <WiFi.h>
 #include <ThingSpeak.h>
 #include "DHT.h"
+#include "config.h"
+
 #define DHTTYPE DHT11
 WiFiClient client;
-char ssid[] = "Mainak";  // your network SSID (name)
-char pass[] = "09072003";     // your network password
-long myChannelNumber = 2457132;
-const char myWriteAPIKey[] = "NEDILGKQU8UL4CPC";
+char ssid[] = WIFI_SSID;  // your network SSID (name)
+char pass[] = WIFI_PASSWORD;     // your network password
+long myChannelNumber = CHANNEL_NUMBER;
+const char myWriteAPIKey[] = WRITE_API_KEY;
 
 uint8_t DHTPin =33;
 uint8_t soilMoisturePin =34;

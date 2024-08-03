@@ -1,9 +1,7 @@
 #include <SPI.h>
 #include <WiFi.h>
 #include <ThingSpeak.h>
-#define BLYNK_TEMPLATE_ID "TMPL3QuiXn9rX"
-#define BLYNK_TEMPLATE_NAME "Sprinkler"
-#define BLYNK_AUTH_TOKEN "DymB4_aavnPQoAtPr8PgRcGtn7cO7S4J"
+#include "config.h"
 #define BLYNK_PRINT Serial
 #include <Blynk.h>
 #include <time.h>
@@ -14,10 +12,10 @@ BlynkTimer timer;
 #include "model.h"
 #define DHTTYPE DHT11
 WiFiClient client;
-char ssid[] = "helomoto";  // your network SSID (name)
-char pass[] = "abcd1234";     // your network password
-long myChannelNumber = 2457132;
-const char myWriteAPIKey[] = "NEDILGKQU8UL4CPC";
+char ssid[] = WIFI_SSID;  // your network SSID (name)
+char pass[] = WIFI_PASSWORD;     // your network password
+long myChannelNumber = CHANNEL_NUMBER;
+const char myWriteAPIKey[] = WRITE_API_KEY;
 char output[256];
 uint8_t DHTPin =33;
 uint8_t soilMoisturePin =34;
