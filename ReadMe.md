@@ -5,6 +5,10 @@
 ![GitHub stars](https://img.shields.io/github/stars/0sigma101/IOT-ML-Smart-Sprinkler)
 ![GitHub license](https://img.shields.io/github/license/0sigma101/IOT-ML-Smart-Sprinkler)
 
+## YouTube Video
+
+[![Watch the video](https://img.shields.io/badge/Watch-Video-red)](https://www.youtube.com/watch?v=zUZkXgSlLq4)
+
 ## Overview
 
 The IoT-based Smart Sprinkler System is designed to automate irrigation processes by analyzing real-time weather and soil data. This system integrates with BLYNK IoT to provide a comprehensive dashboard for monitoring and controlling sprinkler operations. The goal is to optimize water usage and ensure efficient irrigation based on current environmental conditions.
@@ -19,9 +23,9 @@ The IoT-based Smart Sprinkler System is designed to automate irrigation processe
 ## Components
 
 1. **Hardware:**
-   - Sensors for weather and soil data (e.g., humidity sensors, temperature sensors).
-   - Microcontroller (e.g., Arduino, ESP8266, or ESP32) for data collection and processing.
-   - Sprinkler control hardware (e.g., relays or motor drivers).
+   - Sensors for weather and soil data (DHT11 sensors, temperature sensors, Air Pressure Sensor, Light Sensor).
+   - Microcontroller (ESP32) for data collection and processing.
+   - Sprinkler control hardware (DC motor drivers,  Buzzer).
 
 2. **Software:**
    - Microcontroller firmware to handle data collection and control logic.
@@ -33,12 +37,7 @@ The IoT-based Smart Sprinkler System is designed to automate irrigation processe
 ### Hardware Setup
 
 1. **Create the Circuit:**
-   - Follow the circuit diagrams provided in the `hardware` directory to connect weather and soil sensors to the microcontroller.
-   - Set up the sprinkler control hardware (relays or motor drivers) as per the diagrams.
-
-2. **Microcontroller Configuration:**
-   - Use an Arduino board or similar microcontroller.
-   - Flash the firmware code onto the microcontroller. The code can be found in the `firmware` directory.
+   - Follow the circuit diagrams provided in the `smart_sprinkler.ino` file to connect sensors and actuators to the microcontroller.
 
 ### Software Setup
 
@@ -46,9 +45,10 @@ The IoT-based Smart Sprinkler System is designed to automate irrigation processe
    - Create a BLYNK project and obtain your authentication token.
    - Update the firmware code with your BLYNK authentication token.
    - Configure the BLYNK IoT dashboard following the setup instructions in the `dashboard` directory.
+   - Refer to the Video to check for the dashboard variable
 
 2. **Upload Code:**
-   - Connect your Arduino to your computer.
+   - Connect your ESP32 to your computer.
    - Open the provided Arduino sketch in the Arduino IDE.
    - Select the correct board and port from the `Tools` menu.
    - Upload the code to the Arduino.
