@@ -1,9 +1,9 @@
 # IoT-based Smart Sprinkler System
 
-![GitHub issues](https://img.shields.io/github/issues/yourusername/yourrepo)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/yourrepo)
-![GitHub stars](https://img.shields.io/github/stars/yourusername/yourrepo)
-![GitHub license](https://img.shields.io/github/license/yourusername/yourrepo)
+![GitHub issues](https://img.shields.io/github/issues/0sigma101/IOT-ML-Smart-Sprinkler)
+![GitHub forks](https://img.shields.io/github/forks/0sigma101/IOT-ML-Smart-Sprinkler)
+![GitHub stars](https://img.shields.io/github/stars/0sigma101/IOT-ML-Smart-Sprinkler)
+![GitHub license](https://img.shields.io/github/license/0sigma101/IOT-ML-Smart-Sprinkler)
 
 ## Overview
 
